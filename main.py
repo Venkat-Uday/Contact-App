@@ -6,7 +6,8 @@ cursor = conn.cursor()
 cursor.execute('create table if not exists contacts(name text,number integer )')
 cursor.close()
 
-while True:
+i=-1
+while i!=6:
     print("Choose : \n1.Add contact\n2.Update Contact\n3.Delete Contact\n4.print\n5.serch\n6.exit\n")
     i=int(input("Enter Your Choice:"))
     if i==1:
