@@ -13,21 +13,21 @@ while i!=6:
     if i==1:
         name=input("Enter Name:")
         num=int(input("Enter Number:"))
-        side.insert(conn,name,num)
+        contact.insert(conn,name,num)
     elif i==2:
         name=input("Enter Name:")
         num=int(input("Enter Number:"))
-        side.update(conn, name, num)
+        contact.update(conn, name, num)
     elif i==3:
         name=input("Enter Name:")
-        side.delete(conn, name)
+        contact.delete(conn, name)
     elif i==4:
-        side.serch(conn)
+        contact.serch(conn)
     elif i==5:
         ip=input("Enter value:")
-        side.userview(conn,ip)
+        contact.userview(conn,ip)
     elif i==6:
-        side.close(conn)
+        contact.close(conn)
     else:
         print('input should be between 1 to 6 only')
 
